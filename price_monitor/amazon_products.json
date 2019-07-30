@@ -1,34 +1,32 @@
-{
-"itemdata": [ 
-	{	"url": "https://www.amazon.com/dp/B07GWKT87L/?coliid=I36XKNB8MLE3&colid=KRASGH7290D0&psc=0&ref_=lv_ov_lig_dp_it#customerReview",
-		"title": "coffee_maker_black_and_decker",
-		"name": "Cobi Maguire",
-		"email": "cobi@madeupemail.com",
-		"price_margin": 5
-	},
-	{	"url": "https://www.amazon.com/Hamilton-Beach-46310-Programmable-Coffee/dp/B07684BPLB/ref=sr_1_10?keywords=coffee+maker&qid=1559098604&s=home-garden&sr=1-10",
-		"title": "coffee_maker_hamilton_beach",
-		"name": "Ryan Murphy",
-		"email": "ryan@madeupemail.com",
-		"price_margin": 5
-	},
-
-	{
-	"url": "https://www.amazon.com/Ninja-Programmable-Reservoir-Extraction-CE201/dp/B07FDNBSNS/ref=sr_1_4?crid=1RKU3BHAZBY8O&keywords=coffee+makers&qid=1561328369&refinements=p_72%3A1248915011&rnid=1248913011&s=home-garden&sprefix=coffee+makers%2Caps%2C133&sr=1-4",
-	
-	"title": "Ninja 12-Cup Programmable Coffee Maker",
-	"name": "Joe Riley",
-	"email": "joe@madeupemail.com",
-	"price_margin": 5
-	},
-	
-	{
-	"url": "https://www.amazon.com/dp/B07MHS6F85/?coliid=I1HYW7FNVM6MM7&colid=KRASGH7290D0&psc=1&ref_=lv_ov_lig_dp_it",
-	
-	"title": "Ted Baker Men's Yours",
-	"name": "John Barnes",
-	"email": "jbarnes@madeupemail.com",
-	"price_margin": 10
-	}
-	]
+{  
+   "itemdata":[  
+      {  
+         "url":"https://www.amazon.com/dp/B07GWKT87L/?coliid=I36XKNB8MLE3&colid=KRASGH7290D0&psc=0&ref_=lv_ov_lig_dp_it#customerReview",
+         "title":"coffee_maker_black_and_decker",
+         "name":"Cobi Maguire",
+         "email":"hassy22@hotmail.com",
+         "price_margin":5
+      },
+      {  
+         "url":"https://www.amazon.com/Hamilton-Beach-46310-Programmable-Coffee/dp/B07684BPLB/ref=sr_1_10?keywords=coffee+maker&qid=1559098604&s=home-garden&sr=1-10",
+         "title":"coffee_maker_hamilton_beach",
+         "name":"Ryan Murphy",
+         "email":"gareth.hasson@gmail.com",
+         "price_margin":5
+      },
+      {  
+         "url":"https://www.amazon.com/Ninja-Programmable-Reservoir-Extraction-CE201/dp/B07FDNBSNS/ref=sr_1_4?crid=1RKU3BHAZBY8O&keywords=coffee+makers&qid=1561328369&refinements=p_72%3A1248915011&rnid=1248913011&s=home-garden&sprefix=coffee+makers%2Caps%2C133&sr=1-4",
+         "title":"Ninja 12-Cup Programmable Coffee Maker",
+         "name":"Joe Riley",
+         "email":"hassy22@hotmail.com",
+         "price_margin":5
+      },
+      {  
+         "url":"https://www.amazon.com/dp/B07MHS6F85/?coliid=I1HYW7FNVM6MM7&colid=KRASGH7290D0&psc=1&ref_=lv_ov_lig_dp_it",
+         "title":"Ted Baker Men's Yours",
+         "name":"John Barnes",
+         "email":"gareth.hasson@gmail.com",
+         "price_margin":10
+      }
+   ]
 }
