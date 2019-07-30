@@ -4,9 +4,9 @@ import smtplib
 
 host = 'smtp.gmail.com'
 port = 587
-username = "gareth.hasson@gmail.com"
-password = "liverpool27"
-from_email = "gareth.hasson@gmail.com"
+username = "user_name"
+password = "pass"
+from_email = "from_email"
 
 
 def send_email(self, item, rows, price_diff_percentage, price_drop):
