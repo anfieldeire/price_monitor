@@ -3,7 +3,7 @@ Price monitor program for amazon
 
 The program reads a json file, with url to scrape, name, email, and configurable price margin
 
-Scrapes the url from the json file from amazon only, and inserts that into a sqlite DB
+Scrapes the url from the json file from amazon only, and inserts the price plus user info into a sqlite DB
 
 The user will be notifed by email if the price has dropped below or equal to the price margin set in the json file
 
@@ -23,4 +23,6 @@ Installation Instructions
 Running the program
 * Create the virtual environment and activate
    * For example in windows ->  windows_virtualenv/price_monitor/Scripts/activate.bat
-   * cd into windows_virtualenv/price_monitor and run scrapy crawl price_monitor
+   * Create the scrapy project
+      *  cd into windows_virtualenv/price_monitor and run scrapy startproject price_monitor
+   * Run scrapy
