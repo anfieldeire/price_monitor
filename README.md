@@ -1,5 +1,5 @@
-# price_alert
-Price alert program for amazon
+# price_monitor
+Price monitor program for amazon
 
 Prerequisites
 * Python (Tested on python 3.6.5)
