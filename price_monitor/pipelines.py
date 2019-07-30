@@ -45,8 +45,6 @@ class PriceMonitorPipeline(object):
                         and email=:email""",
                           {'url': url, 'email': email})
         rows = self.curr.fetchone()
-        if rows is not None:
-            print("printing rows {}".format(rows))
         self.set_database(item, rows)
 
     def check_margin(self, item, rows):
@@ -75,7 +73,6 @@ class PriceMonitorPipeline(object):
             new_price = rows[1]
             if url == rows_url and email == rows[-1] and scraped_price != rows[1]:
                 self.set_data_update(item, rows_url, new_price)
-
         else:
             self.set_data_insert(item)
         self.check_margin(item, rows)
