@@ -17,7 +17,7 @@ Installation Instructions
 * Install requirements.txt
     * pip install -r requirements.txt
 * Create the sqlite DB in the scrapy root directory
-* Create the amazon_products json file price_monitor directory
+* Create the amazon_products json file
 * The email is sent through gmail. To send the email. Go into gmail settings and Check Allow Less Secure Apps - 'On'
 
 Running the program
