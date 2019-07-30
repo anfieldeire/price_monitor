@@ -45,22 +45,25 @@ class PriceMonitorPipeline(object):
                         and email=:email""",
                           {'url': url, 'email': email})
         rows = self.curr.fetchone()
+        if rows is not None:
+            print("printing rows {}".format(rows))
         self.set_database(item, rows)
 
     def check_margin(self, item, rows):
         """ Check if the amount of the price drop is more than the price margin configured
             If the price drop is enough the price alert will get triggered"""
-        price_margin = (float(rows[3]))
-        track_price = rows[1]
-        price = item[1]
-        price = float(price.strip('$'))
-        price_diff_percentage = price / track_price * 100
-        price_drop = 100 - price_diff_percentage
-        price_drop = round(price_drop, 2)
-        price_diff_percentage = round(price_diff_percentage, 2)
+        if rows is not None:
+            price_margin = (float(rows[3]))
+            track_price = rows[1]
+            price = item[1]
+            price = float(price.strip('$'))
+            price_diff_percentage = price / track_price * 100
+            price_drop = 100 - price_diff_percentage
+            price_drop = round(price_drop, 2)
+            price_diff_percentage = round(price_diff_percentage, 2)
 
-        if 100 - price_margin >= price_diff_percentage:
-            self.call_send_email(item, rows, price_diff_percentage, price_drop)
+            if 100 - price_margin >= price_diff_percentage:
+                self.call_send_email(item, rows, price_diff_percentage, price_drop)
 
     def set_database(self, item, rows):
         """ Call insert or update database functions """
@@ -72,6 +75,9 @@ class PriceMonitorPipeline(object):
             new_price = rows[1]
             if url == rows_url and email == rows[-1] and scraped_price != rows[1]:
                 self.set_data_update(item, rows_url, new_price)
+
+        else:
+            self.set_data_insert(item)
         self.check_margin(item, rows)
 
     def set_data_insert(self, item):
