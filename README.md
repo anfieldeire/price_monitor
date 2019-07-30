@@ -1,7 +1,10 @@
 # price_monitor
 Price monitor program for amazon
-Reads a json file, with url to scrape, name, email, and configurable price margin
+
+The program reads a json file, with url to scrape, name, email, and configurable price margin
+
 Scrapes the url from the json file from amazon only, and inserts that into a sqlite DB
+
 The user will be notifed by email if the price has dropped below or equal to the price margin set in the json file
 
 Prerequisites
