@@ -7,7 +7,7 @@ class MySpider(scrapy.Spider):
     name = 'price_monitor'
 
     def start_requests(self):
-        with open('C:\\Users\\hassy\\Documents\\python_venv\\price_monitor\\price_monitor\\amazon_products.json') as f:
+        with open('C:\\Users\\user\\Documents\\python_venv\\price_monitor\\price_monitor\\amazon_products.json') as f:
             data = json.load(f)
             itemdatalist = data['itemdata']
             for item in itemdatalist:
