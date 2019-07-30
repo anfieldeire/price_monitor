@@ -45,7 +45,6 @@ class PriceMonitorPipeline(object):
                         and email=:email""",
                           {'url': url, 'email': email})
         rows = self.curr.fetchone()
-        print("printing rows {}".format(rows))
         self.set_database(item, rows)
 
     def check_margin(self, item, rows):
