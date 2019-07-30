@@ -10,6 +10,7 @@ The user will be notifed by email if the price has dropped below or equal to the
 Prerequisites
 * Python (Tested on python 3.6.5)
 * scrapy
+* sqlite
 
 Installation Instructions
 * Install python 
