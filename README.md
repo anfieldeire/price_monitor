@@ -25,4 +25,4 @@ Running the program
    * For example in windows ->  windows_virtualenv/price_monitor/Scripts/activate.bat
    * Create the scrapy project
       *  cd into windows_virtualenv/price_monitor and run scrapy startproject price_monitor
-   * Run scrapy
+   * Run scrapy like so - from windows_virtualenv/price_monitor command line, run scrapy crawl price_monitor
